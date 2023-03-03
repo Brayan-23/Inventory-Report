@@ -25,3 +25,25 @@ class Product:
             f" até {self.data_de_validade}"
             f" precisa ser armazenado {self.instrucoes_de_armazenamento}."
         )
+
+
+produto = Product(
+        1,
+        "pessego",
+        "Bryant",
+        "29/11/2022",
+        "29/11/2023",
+        1234,
+        "Guardar em local gelado",
+    )
+
+mock_test = (
+            "O produto pessego "
+            "fabricado em 29/11/2022 "
+            "por Bryant com validade "
+            "até 29/11/2023 "
+            "precisa ser armazenado Guardar em local gelado."
+            )
+
+print(produto)
+print(mock_test)
