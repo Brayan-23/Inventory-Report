@@ -39,8 +39,6 @@ Empresa com mais produtos: {cls.empresa_mais_produtos(lista)[0][0]}"""
                 emprises[name] += 1
 
         result = sorted(
-            emprises.items(), 
-            key=lambda item: item[1], reverse=True)
+            emprises.items(), key=lambda item: item[1], reverse=True
+        )
         return result
-
-

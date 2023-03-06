@@ -37,13 +37,4 @@ produto = Product(
         "Guardar em local gelado",
     )
 
-mock_test = (
-            "O produto pessego "
-            "fabricado em 29/11/2022 "
-            "por Bryant com validade "
-            "até 29/11/2023 "
-            "precisa ser armazenado Guardar em local gelado."
-            )
-
 print(produto)
-print(mock_test)
