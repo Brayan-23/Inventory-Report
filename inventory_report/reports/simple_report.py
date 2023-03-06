@@ -6,7 +6,7 @@ class SimpleReport:
     def generate(cls, lista):
         return f"""{cls.mais_antiga(lista)}
 {cls.data_mais_atual(lista)}
-{cls.empresa_mais_produtos(lista)}"""
+Empresa com mais produtos: {cls.empresa_mais_produtos(lista)[0][0]}"""
 
     @classmethod
     def mais_antiga(cls, lista):
@@ -40,7 +40,7 @@ class SimpleReport:
 
         result = sorted(
             emprises.items(), 
-            key=lambda item: item[1], reverse=True)[0][0]
-        return f'Empresa com mais produtos: {result}'
+            key=lambda item: item[1], reverse=True)
+        return result
 
 
